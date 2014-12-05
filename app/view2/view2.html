@@ -1,0 +1,20 @@
+
+<H1>Clients</H1>
+<p>These are your clients.</p>
+
+<H2>Civilians</H2>
+<ul>
+  <li ng-repeat = "client in clientsList">{{client.name}} {{client.lastName}}</li>
+</ul>
+
+<H2>Drivers</H2>
+<ul>
+  <li ng-repeat = "driver in driversList">{{driver.Driver.givenName}}</li>
+</ul>
+
+
+
+<p>
+  Showing of 'interpolate' filter:
+  {{ 'Current version is v%VERSION%.' | interpolate }}
+</p>
