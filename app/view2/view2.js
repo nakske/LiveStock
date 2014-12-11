@@ -17,10 +17,6 @@ angular.module('myApp.view2', ['ngRoute'])
       return !$scope.nameFilter || re.test(driver.Driver.givenName) || re.test(driver.Driver.familyName);
     };*/
 
-    AccAPIservice.getDrivers().success(function (response) {
-      //Digging into the response to get the relevant data
-      $scope.driversList = response.MRData.StandingsTable.StandingsLists[0].DriverStandings;
-    });
 
     AccAPIservice.getClients().success(function (data) {
       $scope.clientsList = data;
@@ -30,5 +26,5 @@ angular.module('myApp.view2', ['ngRoute'])
         $scope.clientsList = 'error!';
       })
     ;
-  })
+  });
 
