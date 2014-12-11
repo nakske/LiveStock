@@ -6,12 +6,13 @@ angular.module('myApp', [
     'ngResource',
     'myApp.services',
     'myApp.view1',
-    'myApp.view2'
+    'myApp.view2',
+    'myApp.home',
+    'myApp.cattle',
 ])
 
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/', 'view1/view1.html')
-          .otherwise({redirectTo: '/view1'});
+        $routeProvider.otherwise({redirectTo: '/home'});
     }]);
 
 
