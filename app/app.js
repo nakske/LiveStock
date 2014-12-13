@@ -5,14 +5,14 @@ angular.module('myApp', [
     'ngRoute',
     'ngResource',
     'myApp.services',
-    'myApp.view1',
+    'myApp.clients',
     'myApp.view2',
     'myApp.home',
     'myApp.cattle',
 ])
-
+/*
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/home'});
     }]);
-
+*/
 

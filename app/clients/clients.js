@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute'])
+angular.module('myApp.clients', ['ngRoute'])
 
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.when('/view1', {
-            templateUrl: 'view1/view1.html',
-            controller: 'View1Ctrl'
+        $routeProvider.when('/clients', {
+            templateUrl: 'clients/clients.html',
+            controller: 'clientsCtrl'
         });
     }])
 
-    .controller('View1Ctrl', function ($scope, clientService) {
+    .controller('clientsCtrl', function ($scope, clientService) {
 
       clientService.getClients().success(function (data) {
       $scope.clients = data;
