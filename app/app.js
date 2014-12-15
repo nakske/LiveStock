@@ -8,7 +8,7 @@ angular.module('myApp', [
     'myApp.clients',
     'myApp.view2',
     'myApp.home',
-    'myApp.cattle',
+    'myApp.cattle'
 ])
 /*
     .config(['$routeProvider', function ($routeProvider) {
